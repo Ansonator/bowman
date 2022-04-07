@@ -24,7 +24,7 @@ import javassist.util.proxy.ProxyFactory;
 
 import static java.util.Arrays.asList;
 
-class JavassistClientProxyFactory implements ClientProxyFactory {
+public class JavassistClientProxyFactory implements ClientProxyFactory {
 
 	@Override
 	public <T> T create(EntityModel<T> resource, RestOperations restOperations) {

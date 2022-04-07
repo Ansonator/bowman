@@ -2,9 +2,8 @@ package uk.co.blackpepper.bowman;
 
 import java.net.URI;
 
+import org.datrunk.naked.entities.bowman.annotation.RemoteResource;
 import org.junit.Test;
-
-import uk.co.blackpepper.bowman.annotation.RemoteResource;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;

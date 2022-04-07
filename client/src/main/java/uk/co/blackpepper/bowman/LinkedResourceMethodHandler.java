@@ -10,10 +10,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import org.datrunk.naked.entities.bowman.annotation.LinkedResource;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 
-import uk.co.blackpepper.bowman.annotation.LinkedResource;
 
 class LinkedResourceMethodHandler extends AbstractPropertyAwareMethodHandler {
 

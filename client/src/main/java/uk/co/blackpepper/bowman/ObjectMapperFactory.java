@@ -18,7 +18,7 @@ package uk.co.blackpepper.bowman;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.cfg.HandlerInstantiator;
 
-interface ObjectMapperFactory {
+public interface ObjectMapperFactory {
 
 	ObjectMapper create(HandlerInstantiator instantiator);
 }

@@ -1,6 +1,6 @@
 package uk.co.blackpepper.bowman.test.it.model;
 
-import uk.co.blackpepper.bowman.annotation.RemoteResource;
+import org.datrunk.naked.entities.bowman.annotation.RemoteResource;
 
 @RemoteResource("/hierarchy-derived-entity-twos")
 public class HierarchyDerivedEntity2 extends HierarchyBaseEntity {

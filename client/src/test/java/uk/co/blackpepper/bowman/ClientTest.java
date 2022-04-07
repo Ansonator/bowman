@@ -15,20 +15,7 @@
  */
 package uk.co.blackpepper.bowman;
 
-import java.net.URI;
-import java.util.HashMap;
-import java.util.Map;
-
-import org.junit.Before;
-import org.junit.Test;
-import org.springframework.hateoas.CollectionModel;
-import org.springframework.hateoas.EntityModel;
-
-import uk.co.blackpepper.bowman.annotation.RemoteResource;
-import uk.co.blackpepper.bowman.annotation.ResourceId;
-
 import static java.util.Arrays.asList;
-
 import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.nullValue;
@@ -36,6 +23,17 @@ import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+
+import java.net.URI;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.datrunk.naked.entities.bowman.annotation.RemoteResource;
+import org.datrunk.naked.entities.bowman.annotation.ResourceId;
+import org.junit.Before;
+import org.junit.Test;
+import org.springframework.hateoas.CollectionModel;
+import org.springframework.hateoas.EntityModel;
 
 public class ClientTest {
 

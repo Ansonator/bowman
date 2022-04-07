@@ -9,12 +9,13 @@ import org.springframework.hateoas.IanaLinkRelations;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Links;
 
-import uk.co.blackpepper.bowman.annotation.RemoteResource;
 import uk.co.blackpepper.bowman.annotation.ResourceTypeInfo;
 
 import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
+
+import org.datrunk.naked.entities.bowman.annotation.RemoteResource;
 
 public class DefaultTypeResolverTest {
 

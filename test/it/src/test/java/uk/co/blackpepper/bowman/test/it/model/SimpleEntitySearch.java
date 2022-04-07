@@ -2,8 +2,8 @@ package uk.co.blackpepper.bowman.test.it.model;
 
 import java.util.List;
 
-import uk.co.blackpepper.bowman.annotation.LinkedResource;
-import uk.co.blackpepper.bowman.annotation.RemoteResource;
+import org.datrunk.naked.entities.bowman.annotation.LinkedResource;
+import org.datrunk.naked.entities.bowman.annotation.RemoteResource;
 
 @RemoteResource("/simple-entities/search")
 public interface SimpleEntitySearch {

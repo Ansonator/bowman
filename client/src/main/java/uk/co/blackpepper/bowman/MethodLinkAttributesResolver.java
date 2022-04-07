@@ -1,10 +1,10 @@
 package uk.co.blackpepper.bowman;
 
+import static uk.co.blackpepper.bowman.HalSupport.toLinkName;
+
 import java.lang.reflect.Method;
 
-import uk.co.blackpepper.bowman.annotation.LinkedResource;
-
-import static uk.co.blackpepper.bowman.HalSupport.toLinkName;
+import org.datrunk.naked.entities.bowman.annotation.LinkedResource;
 
 class MethodLinkAttributesResolver {
 	

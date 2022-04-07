@@ -20,7 +20,7 @@ import org.springframework.web.client.RestTemplate;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-interface RestTemplateFactory {
+public interface RestTemplateFactory {
 
 	RestTemplate create(ClientHttpRequestFactory clientHttpRequestFactory, ObjectMapper objectMapper);
 }

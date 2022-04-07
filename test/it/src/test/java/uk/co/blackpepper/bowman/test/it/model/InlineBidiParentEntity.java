@@ -19,12 +19,13 @@ import java.net.URI;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+import org.datrunk.naked.entities.bowman.annotation.RemoteResource;
+import org.datrunk.naked.entities.bowman.annotation.ResourceId;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 import uk.co.blackpepper.bowman.InlineAssociationDeserializer;
-import uk.co.blackpepper.bowman.annotation.RemoteResource;
-import uk.co.blackpepper.bowman.annotation.ResourceId;
 
 @RemoteResource("/inline-bidi-parents")
 public class InlineBidiParentEntity {

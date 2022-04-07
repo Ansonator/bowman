@@ -27,14 +27,16 @@ import org.springframework.web.client.RestTemplate;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.google.common.annotations.VisibleForTesting;
 
-class RestOperations {
+public class RestOperations {
 
 	private final RestTemplate restTemplate;
 	
 	private final ObjectMapper objectMapper;
 	
-	RestOperations(RestTemplate restTemplate, ObjectMapper objectMapper) {
+	@VisibleForTesting
+	public RestOperations(RestTemplate restTemplate, ObjectMapper objectMapper) {
 		this.restTemplate = restTemplate;
 		this.objectMapper = objectMapper;
 	}
@@ -103,11 +105,11 @@ class RestOperations {
 		return objectMapper.convertValue(node, targetType);
 	}
 
-	RestTemplate getRestTemplate() {
+	public RestTemplate getRestTemplate() {
 		return restTemplate;
 	}
 	
-	ObjectMapper getObjectMapper() {
+	public ObjectMapper getObjectMapper() {
 		return objectMapper;
 	}
 }

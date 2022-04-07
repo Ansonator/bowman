@@ -17,11 +17,11 @@ package uk.co.blackpepper.bowman.test.it.model;
 
 import java.net.URI;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.datrunk.naked.entities.bowman.annotation.LinkedResource;
+import org.datrunk.naked.entities.bowman.annotation.RemoteResource;
+import org.datrunk.naked.entities.bowman.annotation.ResourceId;
 
-import uk.co.blackpepper.bowman.annotation.LinkedResource;
-import uk.co.blackpepper.bowman.annotation.RemoteResource;
-import uk.co.blackpepper.bowman.annotation.ResourceId;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @RemoteResource("/simple-entities")
 public class SimpleEntity {

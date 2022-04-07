@@ -15,10 +15,17 @@
  */
 package uk.co.blackpepper.bowman;
 
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.CoreMatchers.not;
+import static org.junit.Assert.assertThat;
+
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.datrunk.naked.entities.bowman.annotation.LinkedResource;
+import org.datrunk.naked.entities.bowman.annotation.RemoteResource;
+import org.datrunk.naked.entities.bowman.annotation.ResourceId;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -26,13 +33,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javassist.util.proxy.MethodHandler;
-import uk.co.blackpepper.bowman.annotation.LinkedResource;
-import uk.co.blackpepper.bowman.annotation.RemoteResource;
-import uk.co.blackpepper.bowman.annotation.ResourceId;
-
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.CoreMatchers.not;
-import static org.junit.Assert.assertThat;
 
 public class JacksonClientModuleTest {
 

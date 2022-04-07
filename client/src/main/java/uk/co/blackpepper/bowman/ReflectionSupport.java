@@ -19,9 +19,8 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.net.URI;
 
+import org.datrunk.naked.entities.bowman.annotation.ResourceId;
 import org.springframework.util.ReflectionUtils;
-
-import uk.co.blackpepper.bowman.annotation.ResourceId;
 
 final class ReflectionSupport {
 

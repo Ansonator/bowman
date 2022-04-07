@@ -18,6 +18,7 @@ package uk.co.blackpepper.bowman;
 import java.io.IOException;
 import java.util.List;
 
+import org.datrunk.naked.entities.bowman.annotation.LinkedResource;
 import org.springframework.hateoas.EntityModel;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreType;
@@ -33,7 +34,6 @@ import com.fasterxml.jackson.databind.ser.BeanSerializerModifier;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
 import javassist.util.proxy.MethodHandler;
-import uk.co.blackpepper.bowman.annotation.LinkedResource;
 
 /**
  * A module for handling serialization of Bowman annotated classes.

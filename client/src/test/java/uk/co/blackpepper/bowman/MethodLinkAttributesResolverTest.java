@@ -1,14 +1,13 @@
 package uk.co.blackpepper.bowman;
 
-import java.lang.reflect.Method;
-
-import org.junit.Before;
-import org.junit.Test;
-
-import uk.co.blackpepper.bowman.annotation.LinkedResource;
-
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
+
+import java.lang.reflect.Method;
+
+import org.datrunk.naked.entities.bowman.annotation.LinkedResource;
+import org.junit.Before;
+import org.junit.Test;
 
 public class MethodLinkAttributesResolverTest {
 	

@@ -15,23 +15,23 @@
  */
 package uk.co.blackpepper.bowman.test.it;
 
-import java.net.URI;
-
-import org.junit.Before;
-import org.junit.Test;
-
-import com.google.common.collect.Lists;
-
-import uk.co.blackpepper.bowman.Client;
-import uk.co.blackpepper.bowman.annotation.LinkedResource;
-import uk.co.blackpepper.bowman.test.it.model.SimpleEntity;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.hasItem;
 import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.Matchers.hasProperty;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
+
+import java.net.URI;
+
+import org.datrunk.naked.entities.bowman.annotation.LinkedResource;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.google.common.collect.Lists;
+
+import uk.co.blackpepper.bowman.Client;
+import uk.co.blackpepper.bowman.test.it.model.SimpleEntity;
 
 public class SimpleEntityIT extends AbstractIT {
 

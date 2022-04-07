@@ -3,13 +3,13 @@ package uk.co.blackpepper.bowman;
 import java.net.URI;
 import java.util.Optional;
 
+import org.datrunk.naked.entities.bowman.annotation.RemoteResource;
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.hateoas.IanaLinkRelations;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Links;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import uk.co.blackpepper.bowman.annotation.RemoteResource;
 
 class SelfLinkTypeResolver implements TypeResolver {
 

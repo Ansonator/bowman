@@ -2,14 +2,14 @@ package uk.co.blackpepper.bowman.test.it.model;
 
 import java.util.List;
 
+import org.datrunk.naked.entities.bowman.annotation.LinkedResource;
+import org.datrunk.naked.entities.bowman.annotation.RemoteResource;
 import org.springframework.hateoas.mediatype.hal.Jackson2HalModule;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 import uk.co.blackpepper.bowman.InlineAssociationDeserializer;
-import uk.co.blackpepper.bowman.annotation.LinkedResource;
-import uk.co.blackpepper.bowman.annotation.RemoteResource;
 
 @RemoteResource("/pageable-entities")
 public abstract class PageableEntityResultPage {

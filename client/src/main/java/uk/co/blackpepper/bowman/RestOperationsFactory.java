@@ -33,7 +33,7 @@ import com.fasterxml.jackson.databind.introspect.Annotated;
 import com.fasterxml.jackson.databind.jsontype.TypeIdResolver;
 import com.fasterxml.jackson.databind.jsontype.TypeResolverBuilder;
 
-class RestOperationsFactory {
+public class RestOperationsFactory {
 	
 	private static class RestOperationsInstantiation extends HandlerInstantiator {
 		
@@ -117,7 +117,7 @@ class RestOperationsFactory {
 		this(configuration, proxyFactory, new DefaultObjectMapperFactory(), new DefaultRestTemplateFactory());
 	}
 	
-	RestOperationsFactory(Configuration configuration, ClientProxyFactory proxyFactory,
+	public RestOperationsFactory(Configuration configuration, ClientProxyFactory proxyFactory,
 			ObjectMapperFactory objectMapperFactory, RestTemplateFactory restTemplateFactory) {
 		this.configuration = configuration;
 		this.proxyFactory = proxyFactory;

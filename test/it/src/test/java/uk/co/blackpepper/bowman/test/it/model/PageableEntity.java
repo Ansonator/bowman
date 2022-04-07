@@ -2,9 +2,9 @@ package uk.co.blackpepper.bowman.test.it.model;
 
 import java.net.URI;
 
-import uk.co.blackpepper.bowman.annotation.LinkedResource;
-import uk.co.blackpepper.bowman.annotation.RemoteResource;
-import uk.co.blackpepper.bowman.annotation.ResourceId;
+import org.datrunk.naked.entities.bowman.annotation.LinkedResource;
+import org.datrunk.naked.entities.bowman.annotation.RemoteResource;
+import org.datrunk.naked.entities.bowman.annotation.ResourceId;
 
 @RemoteResource("/pageable-entities")
 public class PageableEntity {

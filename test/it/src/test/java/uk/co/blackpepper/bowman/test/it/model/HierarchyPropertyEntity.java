@@ -4,9 +4,9 @@ import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
-import uk.co.blackpepper.bowman.annotation.LinkedResource;
-import uk.co.blackpepper.bowman.annotation.RemoteResource;
-import uk.co.blackpepper.bowman.annotation.ResourceId;
+import org.datrunk.naked.entities.bowman.annotation.LinkedResource;
+import org.datrunk.naked.entities.bowman.annotation.RemoteResource;
+import org.datrunk.naked.entities.bowman.annotation.ResourceId;
 
 @RemoteResource("/hierarchy-property-entities")
 public class HierarchyPropertyEntity {

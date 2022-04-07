@@ -19,11 +19,10 @@ import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.datrunk.naked.entities.bowman.annotation.RemoteResource;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.web.util.UriComponentsBuilder;
-
-import uk.co.blackpepper.bowman.annotation.RemoteResource;
 
 import static uk.co.blackpepper.bowman.ReflectionSupport.getId;
 import static uk.co.blackpepper.bowman.ReflectionSupport.setId;
@@ -43,8 +42,7 @@ import static uk.co.blackpepper.bowman.ReflectionSupport.setId;
  * 
  */
 public class Client<T> {
-
-	private final Class<T> entityType;
+    private final Class<T> entityType;
 
 	private final URI baseUri;
 	
@@ -52,7 +50,7 @@ public class Client<T> {
 
 	private final RestOperations restOperations;
 
-	Client(Class<T> entityType, Configuration configuration, RestOperations restOperations,
+	protected Client(Class<T> entityType, Configuration configuration, RestOperations restOperations,
 			ClientProxyFactory proxyFactory) {
 		this.entityType = entityType;
 		this.baseUri = getEntityBaseUri(entityType, configuration);
@@ -60,9 +58,21 @@ public class Client<T> {
 		this.restOperations = restOperations;
 	}
 	
+    protected Class<T> getEntityType() {
+        return entityType;
+    }
+
+    protected ClientProxyFactory getProxyFactory() {
+        return proxyFactory;
+    }
+
+    protected RestOperations getRestOperations() {
+        return restOperations;
+    }
+	
 	/**
 	 * GET a single entity from the entity's base resource (determined by the class's
-	 * {@link uk.co.blackpepper.bowman.annotation.RemoteResource} annotation).
+	 * {@link org.datrunk.naked.entities.bowman.annotation.RemoteResource} annotation).
 	 *
 	 * @return the entity, or null if not found
 	 */
@@ -88,7 +98,7 @@ public class Client<T> {
 
 	/**
 	 * GET a collection of entities from the entity's base resource (determined by the class's
-	 * {@link uk.co.blackpepper.bowman.annotation.RemoteResource} annotation). 
+	 * {@link org.datrunk.naked.entities.bowman.annotation.RemoteResource} annotation). 
 	 * 
 	 * @return the entities retrieved
 	 */
@@ -116,7 +126,7 @@ public class Client<T> {
 	
 	/**
 	 * POST the given entity to the entity's base resource (determined by the class's
-	 * {@link uk.co.blackpepper.bowman.annotation.RemoteResource} annotation).
+	 * {@link org.datrunk.naked.entities.bowman.annotation.RemoteResource} annotation).
 	 * 
 	 * The entity will be updated with the URI ID the remote service has assigned it.
 	 * 
@@ -133,7 +143,7 @@ public class Client<T> {
 	
 	/**
 	 * PUT the given entity to the entity's base resource (determined by the class's
-	 * {@link uk.co.blackpepper.bowman.annotation.RemoteResource} annotation).
+	 * {@link org.datrunk.naked.entities.bowman.annotation.RemoteResource} annotation).
 	 *
 	 * @param object the entity to submit
 	 */
@@ -163,7 +173,7 @@ public class Client<T> {
 		return proxyFactory.create(resource, restOperations);
 	}
 	
-	URI getBaseUri() {
+	protected URI getBaseUri() {
 		return baseUri;
 	}
 	

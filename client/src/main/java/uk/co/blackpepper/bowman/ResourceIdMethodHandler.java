@@ -4,11 +4,11 @@ import java.lang.reflect.Method;
 import java.net.URI;
 import java.util.Optional;
 
+import org.datrunk.naked.entities.bowman.annotation.ResourceId;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.IanaLinkRelations;
 import org.springframework.hateoas.Link;
 
-import uk.co.blackpepper.bowman.annotation.ResourceId;
 
 class ResourceIdMethodHandler implements ConditionalMethodHandler {
 	

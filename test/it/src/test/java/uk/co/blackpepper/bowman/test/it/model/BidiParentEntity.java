@@ -19,11 +19,11 @@ import java.net.URI;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.datrunk.naked.entities.bowman.annotation.LinkedResource;
+import org.datrunk.naked.entities.bowman.annotation.RemoteResource;
+import org.datrunk.naked.entities.bowman.annotation.ResourceId;
 
-import uk.co.blackpepper.bowman.annotation.LinkedResource;
-import uk.co.blackpepper.bowman.annotation.RemoteResource;
-import uk.co.blackpepper.bowman.annotation.ResourceId;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @RemoteResource("/bidi-parents")
 public class BidiParentEntity {
